@@ -14,18 +14,19 @@
 
   <div class="container">
     <header class="navbar navbar--fixed">
-      <a href="#" class="logo"><img src="img/icon/Logo.svg" alt="icon: logo" class="logo__icon"></a>
-
-      <div class="navbar-menu">
-        <ul class="navbar-menu__item">
-          <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Рекомендации</a></li>
-          <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Книги</a></li>
-          <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Блог</a></li>
-        </ul>
-
+      <div class="navbar__wrapper">
+        <a href="#" class="logo"><img src="img/icon/Logo.svg" alt="icon: logo" class="logo__icon"></a>
+        <div class="navbar-menu navbar__wrap-menu">
+          <ul class="navbar-menu__ul">
+            <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Рекомендации</a></li>
+            <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Книги</a></li>
+            <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Блог</a></li>
+          </ul>
+        </div>
+        <button class="button button--bordered navbar-menu__button">Получить</button>
       </div>
-      <button class="button navbar-menu__button">Получить</button>
-      <button class="menu-button navbar-menu__burger">
+      <!-- /.navbar__wrapper -->
+      <button class="menu-button navbar-menu__hamburger">
         <span class="menu-button__line"></span>
         <span class="menu-button__line"></span>
         <span class="menu-button__line"></span>
@@ -46,8 +47,8 @@
         золотыми стратегиями ценообразования на творческую работу.
         </p>
         <div class="main-button">
-          <button class="button main-button__bay">КУПИТЬ СЕЙЧАС</button>
-          <a href="#" class="button main-button__read">ЧИТАТЬ ДЕМО</a>
+          <button class="button button--colored main-button__bay">КУПИТЬ СЕЙЧАС</button>
+          <a href="#" class="button button--bordered main-button__read">ЧИТАТЬ ДЕМО</a>
         </div>
         <!-- /.main__text -->
         <div class="main-image">
