@@ -22,11 +22,38 @@
         height: 1px
         background-color: $color-border
 
-  // .main
-  //   flex-direction: column
-  //   align-items: center
   .main
     &-wrapper
       margin-right: 0
     &__background
       margin: 0 30px
+
+  .recommended
+    grid-template-columns: 1fr
+    &__items
+      grid-template-columns: auto minmax(auto, 450px) auto
+
+    &__item
+      grid-column: 2/3
+      grid-template-columns: minmax(200px, auto) auto
+      grid-template-rows: minmax(308px, auto)
+    &__title
+      &-above
+        text-align: center
+    &__button
+      &-more
+        grid-column: 2/3
+  .top
+    &__items
+      grid-template-columns: auto minmax(auto, 450px) auto
+
+    &__item
+      grid-column: 2/3
+      grid-template-columns: minmax(180px, auto) auto
+      grid-template-rows: minmax(295px, auto)
+    &__title
+      &-main
+        text-align: center
+    &__box
+      &-border
+        grid-column: 2/3

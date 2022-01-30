@@ -24,10 +24,25 @@
       &__read
         text-align: center
   .button
-    max-width: 330px
     &--bordered
+      max-width: 330px
       font-size: 16px
       line-height: 22px
       padding: 12px 48px
     &--colored
+      max-width: 330px
       padding: 12px 37px
+
+  .recommended
+    grid-template-columns: 1fr 1fr
+    &__items
+      grid-template-columns: 1fr
+      grid-auto-flow: row
+      column-gap: 0
+    &__item
+      grid-column: 1
+      &:nth-child(even)
+        display: none
+    &__button
+      &-more
+        padding: 0

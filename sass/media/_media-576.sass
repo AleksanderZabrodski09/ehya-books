@@ -4,3 +4,84 @@
     &-wrapper
       margin: 0
       margin-bottom: 38px
+
+  .recommended
+    &__wrapper
+      margin-bottom: 55px
+    &__items
+      grid-template-columns: auto minmax(auto, 280px) auto
+      grid-template-rows: 336px 47px
+          // grid-template-rows: max-content 221px
+    &__item
+      position: relative
+      padding: 0
+      grid-auto-flow: row
+      grid-template-columns: 1fr minmax(auto, 96px) 1fr
+      grid-template-rows: minmax(min-content, 130px) 1fr 1fr
+      column-gap: 0
+      &:not([id="first"])
+        display: none
+    &__book
+      padding: 0
+      display: grid
+      grid-column: 2/3
+      width: 96px
+      height: 143px
+      margin: 0 auto
+      top: -20%
+    &__card
+      grid-column: 1/4
+      justify-items: center
+      padding: 0
+      padding-bottom: 13px
+    &__title
+      font-size: 20px
+      line-height: 24px
+      margin-top: -15px
+      &-above
+        text-align: center
+        margin-bottom: 76px
+        margin-top: 9px
+    &__subtitle
+      font-size: 14px
+      line-height: 20px
+      margin-top: -3px
+    &__price
+      font-size: 16px
+      line-height: 20px
+      margin-bottom: 12px
+    &__button
+      padding: 7px 28px
+      margin-top: 10px
+      &-more
+        grid-column: 2/3
+        text-transform: none
+  .button
+    &--more
+      min-height: 48px
+  .top
+    &__items
+      grid-template-columns: auto minmax(auto, 280px) auto
+      padding: 27px 20px 0 13px
+
+    &__item
+      grid-column: 2/3
+      grid-template-columns: minmax(95px, auto) auto
+      grid-template-rows: minmax(142px, auto)
+      column-gap: 13px
+      margin-bottom: 31px
+      padding-right: 23px
+    &__title
+      margin-bottom: 27px
+      &-main
+        text-align: center
+    &__price
+      font-size: 20px
+      line-height: 24px
+    &__button
+      margin-top: 7px
+    &__box
+      &-border
+        grid-column: 2/3
+        margin-top: 5px
+        padding: 20px 55px
