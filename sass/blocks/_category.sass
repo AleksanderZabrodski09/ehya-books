@@ -1,0 +1,58 @@
+.category
+  padding: 60px 0 90px
+  border-top: 1px solid $color-item
+  position: relative
+  // overflow: hidden
+  z-index: 2
+  &-slider
+    margin: 0
+    position: static
+    &__wrapper
+      z-index: 3
+    &__slide
+      padding: 40px 0 30px
+      text-align: center
+      border: 1px solid #ECEEF2
+      box-sizing: border-box
+      border-radius: 8px
+      z-index: 4
+  &__image
+    width: 64px
+    height: 64px
+    margin-bottom: 40px
+  &__title
+    margin-bottom: 12px
+  &__subtitle
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 22px
+    text-align: center
+    color: #5A7184
+  &-slider
+    &__button
+      position: absolute
+      top: calc(42% - 18px/2 + 1px)
+      width: 56px
+      height: 56px
+      background-size: 14px
+      background-color: #FFFFFF
+      box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.08)
+      border-radius: 30px
+      background-repeat: no-repeat
+      background-position: center
+      z-index: 24
+      outline: none
+      &--prev
+        transform: translate(-50%)
+        background-image: url(../img/icon/arrow-left.svg)
+        left: 0
+      &--next
+        background-image: url(../img/icon/arrow-right.svg)
+        right: 0
+        transform: translate(50%)
+        overflow: visible
+.swiper
+  &-container
+    width: 100%
+    height: 100%
