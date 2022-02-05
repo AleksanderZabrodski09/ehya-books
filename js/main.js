@@ -6,7 +6,7 @@ var likeHeartButton = document.querySelector(".like-heart");
   });
 
 var categorySlider = new Swiper('.category-slider', {
-    loop: true,
+  loop: true,
 
   navigation: {
     nextEl: '.category-slider__button--next',
@@ -22,4 +22,19 @@ var categorySlider = new Swiper('.category-slider', {
   spaceBetween: 26,
 });
   
-  
+var unreleasedSlider = new Swiper('.unreleased-slider', {
+  loop: true,
+
+  navigation: {
+    nextEl: '.unreleased-slider__button--next',
+    prevEl: '.unreleased-slider__button--prev'
+  },
+  // effect: "flip",
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+
+  slidesPerView: 5,
+  spaceBetween: 30,
+});

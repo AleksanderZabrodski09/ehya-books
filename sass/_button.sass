@@ -6,7 +6,6 @@
   line-height: 2.2rem
   border-radius: 8px
   cursor: pointer
-  // transition: all 0.3s
   &--bordered
     color: $color-buy
     border-color: $color-buy
@@ -15,29 +14,13 @@
     font-weight: bold
     font-size: 18px
     line-height: 25px
-    &:hover
-      background: $color-secondary
-    &:active
-      transition: 0.2s
-      background: $color-like
-      border: 2px solid #7fbed5
-      -webkit-box-shadow: 0px 0px 20px -1px #7fbed5ed
-      -moz-box-shadow: 0px 0px 20px -1px #7fbed5ed
-      box-shadow: 0px 0px 20px -1px #7fbed5ed
+
   &--colored
     background: $color-buy
     border-color: $color-buy
     color: $color-light
     padding: 17px 37px
-    &:hover
-      opacity: 0.5
-    &:active
-      transition: 0.2s
-      background: $color-like
-      border: 2px solid #7fbed5
-      -webkit-box-shadow: 0px 0px 20px -1px #7fbed5ed
-      -moz-box-shadow: 0px 0px 20px -1px #7fbed5ed
-      box-shadow: 0px 0px 20px -1px #7fbed5ed
+
   &--more
     padding: 0 180px
     min-height: 74px
@@ -52,16 +35,6 @@
     background-color: $color-opacity-2
     mix-blend-mode: normal
     border-radius: 8px
-    &:hover
-      color: $color-buy
-      opacity: 0.5
-    &:active
-      transition: 0.2s
-      background: $color-like
-      border: 2px solid #7fbed5
-      -webkit-box-shadow: 0px 0px 20px -1px #7fbed5ed
-      -moz-box-shadow: 0px 0px 20px -1px #7fbed5ed
-      box-shadow: 0px 0px 20px -1px #7fbed5ed
 
 .like
   &-button
@@ -78,15 +51,7 @@
     padding: 7px 20px
     border-radius: 20px
     border: 1px solid transparent
-    &:hover
-      opacity: 0.5
-    &:active
-      transition: 0.2s
-      background: $color-like
-      border: 1px solid #7fbed5
-      -webkit-box-shadow: 0px 0px 20px -1px #7fbed5ed
-      -moz-box-shadow: 0px 0px 20px -1px #7fbed5ed
-      box-shadow: 0px 0px 20px -1px #7fbed5ed
+
   &-heart
     margin-bottom: -5px
     margin-left: 15px
@@ -99,3 +64,59 @@
   //   outline: none
 // .clicked
 //   background-image: url(../img/icon/heart-red.svg)
+@media (min-width: 992px)
+  .button
+    &--bordered
+      &:hover
+        background: $color-secondary
+      &:active
+        transition: 0.2s
+        background: $color-like
+        border: 2px solid #7fbed5
+        -webkit-box-shadow: 0px 0px 20px -1px #7fbed5ed
+        -moz-box-shadow: 0px 0px 20px -1px #7fbed5ed
+        box-shadow: 0px 0px 20px -1px #7fbed5ed
+    &--colored
+      &:hover
+        opacity: 0.5
+      &:active
+        transition: 0.2s
+        background: $color-like
+        border: 2px solid #7fbed5
+        -webkit-box-shadow: 0px 0px 20px -1px #7fbed5ed
+        -moz-box-shadow: 0px 0px 20px -1px #7fbed5ed
+        box-shadow: 0px 0px 20px -1px #7fbed5ed
+    &--more
+      &:hover
+        color: $color-buy
+        opacity: 0.5
+      &:active
+        transition: 0.2s
+        background: $color-like
+        border: 2px solid #7fbed5
+        -webkit-box-shadow: 0px 0px 20px -1px #7fbed5ed
+        -moz-box-shadow: 0px 0px 20px -1px #7fbed5ed
+        box-shadow: 0px 0px 20px -1px #7fbed5ed
+  .like
+    &-button
+      &:hover
+        opacity: 0.5
+      &:active
+        transition: 0.2s
+        background: $color-like
+        border: 1px solid #7fbed5
+        -webkit-box-shadow: 0px 0px 20px -1px #7fbed5ed
+        -moz-box-shadow: 0px 0px 20px -1px #7fbed5ed
+        box-shadow: 0px 0px 20px -1px #7fbed5ed
+  .unreleased
+    &-slider
+      &__button
+        &--prev
+          &:hover
+            background-image: url(../img/icon/arrow-white-left.svg)
+            border: 2px solid #ffffff
+
+        &--next
+          &:hover
+            background-image: url(../img/icon/arrow-white-right.svg)
+            border: 2px solid #ffffff
