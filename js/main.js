@@ -6,7 +6,7 @@ var likeHeartButton = document.querySelector(".like-heart");
   });
 
 var categorySlider = new Swiper('.category-slider', {
-  loop: true,
+  // loop: true,
 
   navigation: {
     nextEl: '.category-slider__button--next',
@@ -17,9 +17,17 @@ var categorySlider = new Swiper('.category-slider', {
     enabled: true,
     onlyInViewport: false,
   },
-
-  slidesPerView: 4,
+  autoHight: false,
+  slidesPerView: 2,
+  slidesPerColumn: 2,
   spaceBetween: 26,
+  slidesPerColumnFill: row,
+  breakpoints: {
+    1201: {
+      slidesPerView: 4,
+      spaceBetween: 26,
+    }
+  },
 });
   
 var unreleasedSlider = new Swiper('.unreleased-slider', {
@@ -35,6 +43,25 @@ var unreleasedSlider = new Swiper('.unreleased-slider', {
     onlyInViewport: false,
   },
 
-  slidesPerView: 5,
-  spaceBetween: 30,
+  slidesPerView: 1,
+  spaceBetween: 0,
+
+  breakpoints: {
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 5,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 41,
+    },
+    992: {
+      slidesPerView: 4,
+      spaceBetween: 30,
+    },
+    1200: {
+      slidesPerView: 5,
+      spaceBetween: 30,
+    },
+  },
 });
