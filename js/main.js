@@ -1,6 +1,6 @@
 var likeHeartButton = document.querySelector(".like-heart");
   likeHeartButton.addEventListener("click", function (event) {
-  this.classList.toggle("clicked");
+    likeHeartButton.classList.toggle("clicked");
         // likeHeartButton.addEventListener("click", function (event) {
         // console.log((event.target.style.fill = "red"));
   });
@@ -21,7 +21,7 @@ var categorySlider = new Swiper('.category-slider', {
   slidesPerView: 2,
   slidesPerColumn: 2,
   spaceBetween: 26,
-  slidesPerColumnFill: row,
+  // slidesPerColumnFill: row,
   breakpoints: {
     1201: {
       slidesPerView: 4,

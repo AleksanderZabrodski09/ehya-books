@@ -1,0 +1,82 @@
+.story
+  padding: 111px 68px 100px
+  &-wrapper
+    display: flex
+    justify-content: space-between
+    margin-bottom: 24px
+  &__title
+    margin: 0
+    flex-shrink: 0
+  &__subtitle
+    max-width: 380px
+    font-family: Open Sans
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 32px
+    color: #5A7184
+  &__main
+    &-video
+      position: relative
+          // width: 100%
+          // background-image: url(../img/main-video.jpg)
+          // background-position: 0 0
+          // background-repeat: no-repeat
+          // background-size: 100% auto
+      overflow: hidden
+      height: 380px
+      margin-bottom: 30px
+      // object-fit: cover
+    &-image
+      position: absolute
+      width: 100%
+      // height: 100%
+      top: -70px
+      // top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      object-fit: cover
+    &-play
+      position: absolute
+      z-index: 2
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      cursor: pointer
+  &__items
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(215px, 1fr))
+    column-gap: 30px
+  &-item
+    &__video
+      position: relative
+      overflow: hidden
+      height: 200px
+      padding: 0px 0px 56% 0px
+      margin: 0 0 22px 0
+    &__image
+      position: absolute
+      z-index: -1
+      object-fit: cover
+      width: 100%
+      height: 100%
+      top: 0
+      left: 0
+    &__play
+      position: absolute
+      width: 30px
+      height: 39px
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      cursor: pointer
+      z-index: 1
+    &__text
+      display: flex
+      justify-content: space-between
+    &__title
+      margin-bottom: 10px
+    &__subtitle
+      font-size: 16px
+      line-height: 22px
