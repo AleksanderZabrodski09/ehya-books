@@ -3,7 +3,9 @@
   &-wrapper
     display: flex
     justify-content: space-between
-    margin-bottom: 24px
+    padding-right: 34px
+    margin-bottom: 19px
+    margin-top: -5px
   &__title
     margin: 0
     flex-shrink: 0
@@ -24,7 +26,8 @@
           // background-repeat: no-repeat
           // background-size: 100% auto
       overflow: hidden
-      height: 380px
+      padding: 0 0 38% 0
+      // height: 380px
       margin-bottom: 30px
       // object-fit: cover
     &-image
@@ -34,8 +37,6 @@
       top: -70px
       // top: 0
       left: 0
-      right: 0
-      bottom: 0
       object-fit: cover
     &-play
       position: absolute
@@ -52,17 +53,23 @@
     &__video
       position: relative
       overflow: hidden
-      height: 200px
-      padding: 0px 0px 56% 0px
+      // height: 200px
+      padding: 0px 0px 64% 0px
       margin: 0 0 22px 0
     &__image
       position: absolute
       z-index: -1
-      object-fit: cover
+      // object-fit: cover
+      // object-position: 0 0
+      object-fit: none
       width: 100%
       height: 100%
       top: 0
       left: 0
+      // background-image: url(./img/Nembo_Lukeni.jpg)
+      // background-position: cover
+      // background-repeat: no-repeat
+      // background-size: 100% auto
     &__play
       position: absolute
       width: 30px
@@ -80,3 +87,11 @@
     &__subtitle
       font-size: 16px
       line-height: 22px
+  &__like
+    margin-top: 7px
+
+#play-767
+  display: none
+
+// #press-992
+//   display: none
