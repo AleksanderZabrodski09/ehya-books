@@ -56,6 +56,7 @@
     &-container
       min-height: 481px
   .recommended
+    padding-bottom: 92px
     column-gap: 0
     &__button
       &-more
@@ -80,7 +81,16 @@
         &--next
           transform: translate(43%)
   .category
-    padding: 60px 0 114px
+    &-slider
+      &__button
+        top: auto
+        right: auto
+        &--next
+          right: 43%
+          transform: translate(50%)
+        &--prev
+          left: 43%
+          transform: translate(-50%)
 
   .story
     padding: 50px 0 100px
@@ -100,12 +110,12 @@
     &__subtitle
       text-align: center
       max-width: 577px
-    &__main
-      &-video
-        padding: 0 0 51% 0
-        margin-bottom: 24px
       &-image
         top: 0
+    &__main
+      &-video
+        padding: 0 0 52% 0
+        margin-bottom: 18px
 
     &__items
       column-gap: 22px
@@ -123,3 +133,25 @@
     display: none
   #press-992
     display: block
+
+  .partners
+    padding: 57px 71px 68px
+    &-wrapper
+      display: flex
+      // flex-direction: column
+      gap: 20px
+    &__title
+      margin-bottom: 42px
+    &__parts-1
+      flex-wrap: wrap
+      margin-bottom: 0
+      margin-right: 20px
+
+    &__parts-2
+      flex-wrap: wrap
+
+  .fa-solid
+    font-size: 27px
+  .icon
+    &-flag
+      font-size: 14px
