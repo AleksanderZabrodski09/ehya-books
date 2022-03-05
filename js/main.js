@@ -1,9 +1,9 @@
 var likeHeartButton = document.querySelector(".like-heart");
-  likeHeartButton.addEventListener("click", function (event) {
-    likeHeartButton.classList.toggle("clicked");
-        // likeHeartButton.addEventListener("click", function (event) {
-        // console.log((event.target.style.fill = "red"));
-  });
+likeHeartButton.addEventListener("click", function (event) {
+  likeHeartButton.classList.toggle("clicked");
+  // likeHeartButton.addEventListener("click", function (event) {
+  // console.log((event.target.style.fill = "red"));
+});
 
 var categorySlider = new Swiper('.category-slider', {
   // loop: true,
@@ -20,16 +20,19 @@ var categorySlider = new Swiper('.category-slider', {
   autoHight: false,
   slidesPerView: 2,
   slidesPerColumn: 2,
-  spaceBetween: 26,
+  spaceBetween: 10,
   // slidesPerColumnFill: row,
   breakpoints: {
     1201: {
       slidesPerView: 4,
       spaceBetween: 26,
-    }
+    },
+    768: {
+      spaceBetween: 26,
+    },
   },
 });
-  
+
 var unreleasedSlider = new Swiper('.unreleased-slider', {
   loop: true,
 
