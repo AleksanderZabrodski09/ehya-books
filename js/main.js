@@ -1,5 +1,5 @@
 const likeHeartButton = document.querySelectorAll(".like-heart");
-likeHeartButton.forEach((likeHeartButton, index) => {
+likeHeartButton.forEach((likeHeartButton) => {
   likeHeartButton.addEventListener("click", () => {
     likeHeartButton.classList.toggle("clicked");
   });
