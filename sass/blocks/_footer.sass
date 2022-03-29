@@ -1,0 +1,46 @@
+.footer
+  padding: 108px 0 80px
+  &-logo
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    &__text
+      font-style: normal
+      font-weight: 400
+      font-size: 15px
+      line-height: 28px
+      color: $color-text
+    &__icons
+      display: flex
+    &__icon
+      margin-right: 7px
+  &__title
+    font-family: 'Open Sans'
+    font-style: normal
+    font-weight: 700
+    font-size: 18px
+    line-height: 25px
+    margin-bottom: 17px
+  &__item
+    font-family: 'Open Sans'
+    font-style: normal
+    font-weight: 400
+    font-size: 16px
+    line-height: 46px
+    color: $color-title
+  &-wrapper
+    display: grid
+    grid-template-columns: 263px repeat(4, minmax(auto, 165px))
+    // grid-template-rows: minmax(186px, min-content)
+    grid-template-rows: 180px 80px 96px 102px
+    column-gap: 30px
+  &__product
+    grid-row: 1/3
+    grid-column: 2
+.copyright
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: space-between
+  grid-row: 4/5
+  grid-column: 2/5
