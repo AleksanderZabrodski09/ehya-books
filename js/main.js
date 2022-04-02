@@ -13,6 +13,13 @@ likeHeartButton.forEach((likeHeartButton) => {
 // console.log((event.target.style.fill = "red"));
 // });
 
+let menuButton = document.querySelector('.menu-button')
+menuButton.addEventListener('click', function (event) {
+  // console.log('Клик по кнопке меню');
+  document.querySelector('.navbar-menu').classList.toggle('navbar-menu--visible');
+  document.querySelector('body').classList.toggle('lock');
+});
+
 var categorySlider = new Swiper('.category-slider', {
   // loop: true,
 

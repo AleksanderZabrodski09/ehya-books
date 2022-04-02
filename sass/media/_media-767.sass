@@ -2,11 +2,46 @@
   .container
     max-width: 576px
     width: 92%
+  body
+    padding-top: 64px
+  .lock
+    overflow: hidden
   .navbar
+    &--fixed
+      position: fixed
+      top: 0
+      right: 0
+      left: 0
+      z-index: 99
     &-menu
       display: none
+      position: fixed
+      right: 0
+      left: 0
+      bottom: 0
+      top: 43px
+      background-color: $color-partners-menu
+      z-index: 120
+      margin-left: 0
+      &__ul
+        flex-direction: column
+        align-items: center
+        font-size: 26px
+        line-height: 32px
+        padding-top: 20px
+      &__item
+        margin-top: 30px
+      &--visible
+        display: flex
+        flex-direction: column
+        align-items: center
+
       &__button
         display: none
+        &--mobile
+          display: block
+          margin-top: 30px
+          background-color: $color-partners-menu
   .menu
     &-button
       display: flex
