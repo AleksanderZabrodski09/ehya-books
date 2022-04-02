@@ -373,7 +373,7 @@
     <!-- /.category -->
   </div>
   <!-- /.container -->
-  <section class="unreleased">
+  <section class="unreleased" id="unreleased">
     <div class="container unreleased__container">
       <h2 class="unreleased__title">Неизданные книги</h2>
       <div class="unreleased-slider swiper">
@@ -556,7 +556,7 @@
     <!-- /.container-->
   </section>
   <div class="container">
-    <section class="blog">
+    <section class="blog" id="blog">
       <div class="blog__wrapper-main">
         <h1 class="blog__title">Ehya Блог</h1>
         <!-- /.blog__title -->
@@ -620,10 +620,10 @@
     <div class="container blue-container">
       <div class="stock-wrapper">
         <h2 class="stock__title">Будь первым, кто узнает о&nbsp;наших акциях</h2>
-        <form action="#" class="subscribe stock__subscribe">
-          <input type="text" class="subscribe__input" placeholder="Ваш Email">
+        <form action="send.php" method="POST" class="subscribe stock__subscribe">
+          <input type="email" class="subscribe__input" placeholder="Ваш Email" name="email">
           <img src="img/icon/email.svg" alt="icon: letter" class="subscribe__email">
-          <button class="subscribe__button button button--stock">Регистрация</button>
+          <button class="subscribe__button button button--stock" name="subscribe">Регистрация</button>
         </form>
       </div>
       <!-- /.stock-wrapper -->
