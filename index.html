@@ -19,6 +19,7 @@
   <script src="js/fancybox.umd.js" defer></script>
   <script src="js/swiper-bundle.min.js" defer></script>
   <script src="js/menu.js" defer></script>
+  <script src="js/modal.js" defer></script>
   <script src="js/main.js" defer></script>
 </head>
 
@@ -66,7 +67,7 @@
             золотыми стратегиями ценообразования на творческую работу.
           </p>
           <div class="main-button">
-            <button class="button button--colored main-button__buy">КУПИТЬ СЕЙЧАС</button>
+            <button class="button button--colored main-button__buy buy">КУПИТЬ СЕЙЧАС</button>
             <a href="#" class="button button--bordered main-button__read">ЧИТАТЬ ДЕМО</a>
           </div>
           <!-- /.main__text -->
@@ -98,7 +99,7 @@
               <span class="recommended__subtitle">Art & Design</span>
               <strong class="like-price recommended__price">$25.00</strong>
               <div class="recommended__heart">
-                <button class="like-button recommended__button">Купить</button>
+                <button class="like-button recommended__button buy">Купить</button>
                 <svg class="like-heart" fill="#959EAD" width="20" height="18" xmlns="http://www.w3.org/2000/svg"
                   id="heart">
                   <path
@@ -121,7 +122,7 @@
               <span class="recommended__subtitle">Education</span>
               <strong class="like-price recommended__price">$28.00</strong>
               <div class="recommended__heart">
-                <button class="like-button recommended__button">Купить</button>
+                <button class="like-button recommended__button buy">Купить</button>
                 <svg class="like-heart" fill="#959EAD" width="20" height="18" xmlns="http://www.w3.org/2000/svg"
                   id="heart">
                   <path
@@ -144,7 +145,7 @@
               <span class="recommended__subtitle">Novel</span>
               <strong class="like-price recommended__price">$19.50</strong>
               <div class="recommended__heart">
-                <button class="like-button recommended__button">Купить</button>
+                <button class="like-button recommended__button buy">Купить</button>
                 <svg class="like-heart" fill="#959EAD" width="20" height="18" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M17.242 2.465c-1.933-1.652-4.781-1.336-6.574.492L10 3.66l-.703-.703C7.539 1.129 4.657.813 2.723 2.465.508 4.363.403 7.738 2.37 9.777l6.82 7.032c.422.457 1.16.457 1.582 0l6.82-7.032c1.97-2.039 1.864-5.414-.35-7.312Z" />
@@ -166,7 +167,7 @@
               <span class="recommended__subtitle">Novel</span>
               <strong class="like-price like-price recommended__price">$20.00</strong>
               <div class="recommended__heart">
-                <button class="like-button recommended__button">Купить</button>
+                <button class="like-button recommended__button buy">Купить</button>
                 <svg class="like-heart" fill="#959EAD" width="20" height="18" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M17.242 2.465c-1.933-1.652-4.781-1.336-6.574.492L10 3.66l-.703-.703C7.539 1.129 4.657.813 2.723 2.465.508 4.363.403 7.738 2.37 9.777l6.82 7.032c.422.457 1.16.457 1.582 0l6.82-7.032c1.97-2.039 1.864-5.414-.35-7.312Z" />
@@ -188,7 +189,7 @@
               <span class="recommended__subtitle">Business</span>
               <strong class="like-price like-price recommended__price">$23.00</strong>
               <div class="recommended__heart">
-                <button class="like-button recommended__button">Купить</button>
+                <button class="like-button recommended__button buy">Купить</button>
                 <svg class="like-heart" fill="#959EAD" width="20" height="18" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M17.242 2.465c-1.933-1.652-4.781-1.336-6.574.492L10 3.66l-.703-.703C7.539 1.129 4.657.813 2.723 2.465.508 4.363.403 7.738 2.37 9.777l6.82 7.032c.422.457 1.16.457 1.582 0l6.82-7.032c1.97-2.039 1.864-5.414-.35-7.312Z" />
@@ -210,7 +211,7 @@
               <span class="recommended__subtitle">Motivation</span>
               <strong class="like-price like-price recommended__price">$23.00</strong>
               <div class="recommended__heart">
-                <button class="like-button recommended__button">Купить</button>
+                <button class="like-button recommended__button buy">Купить</button>
                 <svg class="like-heart" fill="#959EAD" width="20" height="18" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M17.242 2.465c-1.933-1.652-4.781-1.336-6.574.492L10 3.66l-.703-.703C7.539 1.129 4.657.813 2.723 2.465.508 4.363.403 7.738 2.37 9.777l6.82 7.032c.422.457 1.16.457 1.582 0l6.82-7.032c1.97-2.039 1.864-5.414-.35-7.312Z" />
@@ -241,7 +242,7 @@
                   Test in 5 Days</h3>
                 <strong class="like-price top__price">$23.00</strong>
                 <div class="top__heart">
-                  <button class="like-button top__button">Купить</button>
+                  <button class="like-button top__button buy">Купить</button>
                 </div>
                 <!-- /.top__heart -->
               </div>
@@ -258,7 +259,7 @@
                   Break Problem</h3>
                 <strong class="like-price top__price">$23.00</strong>
                 <div class="top__heart">
-                  <button class="like-button top__button">Купить</button>
+                  <button class="like-button top__button buy">Купить</button>
                 </div>
                 <!-- /.top__heart -->
               </div>
@@ -275,7 +276,7 @@
                   Novel by Mercy</h3>
                 <strong class="like-price top__price">$23.00</strong>
                 <div class="top__heart">
-                  <button class="like-button top__button">Купить</button>
+                  <button class="like-button top__button buy">Купить</button>
                 </div>
                 <!-- /.top__heart -->
               </div>
@@ -292,7 +293,7 @@
                   Build Products</h3>
                 <strong class="like-price top__price">$23.00</strong>
                 <div class="top__heart">
-                  <button class="like-button top__button">Купить</button>
+                  <button class="like-button top__button buy">Купить</button>
                 </div>
                 <!-- /.top__heart -->
               </div>
@@ -703,7 +704,23 @@
     </div>
     <!-- /.container -->
   </footer>
-
+  <div class="modal hidden">
+    <div class="modal-overlay"></div>
+    <!-- /.overlay -->
+    <div class="modal-wrapper">
+      <h3 class="modal__title">order this book</h3>
+      <button class="modal__close"></button>
+      <form action="send.php" class="form modal__form" method="POST">
+        <input type="text" class="input modal__input" placeholder="Your Full Name*">
+        <input type="tel" class="input modal__input" placeholder="Phone Number*">
+        <input type="email" class="input modal__input" placeholder="Email*">
+        <button class="button modal__button">buy</button>
+      </form>
+      <!-- /.button modal__button -->
+    </div>
+    <!-- /.modal-wrapper -->
+  </div>
+  <!-- /.modal hidden -->
   <!-- <script src="https://kit.fontawesome.com/748f98c1b5.js" crossorigin="anonymous"></script> -->
 </body>
 
