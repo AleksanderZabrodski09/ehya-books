@@ -7,7 +7,7 @@ require 'phpmailer/Exception.php';
 // Переменные, которые отправляет пользователь
 $name = $_POST['name'];
 $phone = $_POST['phone'];
-$message = $_POST['message'];
+// $message = $_POST['message'];
 $email = $_POST['email'];
 if (isset($_POST[subscribe])){
 $body = "
@@ -17,8 +17,8 @@ email: $email";
   $body = "
   <h2>New letter</h2>
   <b>Name:</b> $name<br>
+  <b>Phone:</b> $phone<br>
   <b>Email:</b> $email<br><br>
-  <b>Message:</b><br>$message
   ";
 };
 
@@ -31,7 +31,7 @@ try {
     $mail->isSMTP();   
     $mail->CharSet = "UTF-8";
     $mail->SMTPAuth   = true;
-    $mail->SMTPDebug = 2;
+    // $mail->SMTPDebug = 2;
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
