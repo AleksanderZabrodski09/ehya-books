@@ -16,11 +16,15 @@
   <link rel="stylesheet" href="css/icomy.css">
   <link rel="stylesheet" href="css/iconsfont.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery-2.2.4.min.js" defer></script>
+  <script src="js/jquery.validate.min.js" defer></script>
+  <script src="js/jquery.mask.min.js" defer></script>
   <script src="js/fancybox.umd.js" defer></script>
   <script src="js/swiper-bundle.min.js" defer></script>
+  <script src="js/main.js" defer></script>
   <script src="js/menu.js" defer></script>
   <script src="js/modal.js" defer></script>
-  <script src="js/main.js" defer></script>
+  <script src="js/validation.js" defer></script>
 </head>
 
 <body>
@@ -713,7 +717,8 @@
       <button class="modal__close"></button>
       <form action="send.php" class="form modal__form" method="POST">
         <input type="text" class="input modal__input" name="name" placeholder="Your Full Name*" required minlength="2">
-        <input type="tel" class="input modal__input " name="phone" placeholder="Phone Number*" required>
+        <input type="tel" class="input modal__input phone" name="phone" placeholder="Phone Number*" required
+          minlength="15" maxlength="15">
         <input type="email" class="input modal__input" name="email" placeholder="Email*" required>
         <button class="button modal__button">buy</button>
       </form>

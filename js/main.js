@@ -14,7 +14,7 @@ likeHeartButton.forEach((heart) => {
 // });
 
 
-var categorySlider = new Swiper('.category-slider', {
+const categorySlider = new Swiper('.category-slider', {
   // loop: true,
 
   navigation: {
@@ -30,19 +30,34 @@ var categorySlider = new Swiper('.category-slider', {
   slidesPerView: 2,
   slidesPerColumn: 2,
   spaceBetween: 10,
+  // modules: [Grid],
+  //   grid: {
+  //     rows: 2,
+  //     fill: 'row',
+  //   },
+  grid: {
+    rows: 2,
+  },
   // slidesPerColumnFill: row,
   breakpoints: {
     1201: {
       slidesPerView: 4,
       spaceBetween: 26,
+      grid: {
+        rows: 1,
+      },
     },
-    768: {
-      spaceBetween: 26,
+    576: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+      grid: {
+        rows: 2,
+      },
     },
   },
 });
 
-var unreleasedSlider = new Swiper('.unreleased-slider', {
+const unreleasedSlider = new Swiper('.unreleased-slider', {
   loop: true,
 
   navigation: {
