@@ -13,7 +13,7 @@
     rel="stylesheet">
   <link rel="stylesheet" href="css/fancybox.css" />
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
-  <link rel="stylesheet" href="css/icoMY.css">
+  <link rel="stylesheet" href="css/icomy.css">
   <link rel="stylesheet" href="css/iconsfont.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/fancybox.umd.js" defer></script>
@@ -626,7 +626,7 @@
       <div class="stock-wrapper">
         <h2 class="stock__title">Будь первым, кто узнает о&nbsp;наших акциях</h2>
         <form action="send.php" method="POST" class="subscribe stock__subscribe">
-          <input type="email" class="subscribe__input" placeholder="Ваш Email" name="email">
+          <input type="email" class="subscribe__input" placeholder="Ваш Email" name="email" required>
           <img src="img/icon/email.svg" alt="icon: letter" class="subscribe__email">
           <button class="subscribe__button button button--stock" name="subscribe">Регистрация</button>
         </form>
@@ -712,9 +712,9 @@
       <h3 class="modal__title">order this book</h3>
       <button class="modal__close"></button>
       <form action="send.php" class="form modal__form" method="POST">
-        <input type="text" class="input modal__input" name="name" placeholder="Your Full Name*">
-        <input type="tel" class="input modal__input " name="phone" placeholder="Phone Number*">
-        <input type="email" class="input modal__input" name="email" placeholder="Email*">
+        <input type="text" class="input modal__input" name="name" placeholder="Your Full Name*" required minlength="2">
+        <input type="tel" class="input modal__input " name="phone" placeholder="Phone Number*" required>
+        <input type="email" class="input modal__input" name="email" placeholder="Email*" required>
         <button class="button modal__button">buy</button>
       </form>
       <!-- /.button modal__button -->
