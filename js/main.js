@@ -92,3 +92,4 @@ const unreleasedSlider = new Swiper('.unreleased-slider', {
     },
   },
 });
+AOS.init();
